@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="feed_title_text_size">24sp</dimen>
+    <dimen name="feed_description_text_size">22sp</dimen>
+    <dimen name="feed_website_text_size">18sp</dimen>
+    <dimen name="feed_date_text_size">18sp</dimen>
+
+    <dimen name="feed_lv_image_width_height">160dp</dimen>
+    <dimen name="feed_cv_image_height">224dp</dimen>
+
+    <dimen name="feed_view_title_text_size">26sp</dimen>
+    <dimen name="feed_view_description_text_size">24sp</dimen>
+    <dimen name="feed_view_date_text_size">20sp</dimen>
+
+</resources>

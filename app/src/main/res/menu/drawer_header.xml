@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_feed_add"
+        android:orderInCategory="100"
+        android:title="Add Feed"
+        android:icon="@drawable/ic_add_black_24dp"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_all"
+        android:orderInCategory="100"
+        android:title="All"
+        android:icon="@drawable/ic_folder_open_black_24dp"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_starred"
+        android:orderInCategory="100"
+        android:title="Starred"
+        android:icon="@drawable/ic_star_black_24dp"
+        app:actionLayout="@layout/custom_drawer_counter"
+        app:showAsAction="never" />
+
+</menu>

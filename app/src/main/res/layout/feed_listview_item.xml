@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite2"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivThumbnail"
+            android:layout_width="@dimen/feed_lv_image_width_height"
+            android:layout_height="@dimen/feed_lv_image_width_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:maxWidth="192dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivThumbnail"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Title"
+            android:textColor="#555"
+            android:textSize="@dimen/feed_title_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitle"
+            android:layout_toRightOf="@id/ivThumbnail"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="Content"
+            android:textSize="@dimen/feed_description_text_size" />
+
+        <TextView
+            android:id="@+id/txtFeedName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDescription"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/ivThumbnail"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="180dp"
+            android:text="Feed Name"
+            android:textSize="@dimen/feed_website_text_size" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txtDescription"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="4dp"
+            android:maxWidth="200dp"
+            android:text="0 mins ago"
+            android:textSize="@dimen/feed_date_text_size" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

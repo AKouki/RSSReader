@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="2"
+        android:entries="@array/syncStartupArray"
+        android:entryValues="@array/syncStartupValues"
+        android:key="syncAutomatic"
+        android:summary="WiFi Only"
+        android:title="Automatic Synchronization" />
+
+    <ListPreference
+        android:defaultValue="7200000"
+        android:entries="@array/intervalArray"
+        android:entryValues="@array/intervalValues"
+        android:key="syncInterval"
+        android:summary="Every 2 hours"
+        android:title="Interval" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="syncStartup"
+        android:summary="Sync feeds when startup"
+        android:title="Sync on startup" />
+
+    <ListPreference
+        android:defaultValue="345600000"
+        android:entries="@array/cleanArray"
+        android:entryValues="@array/cleanValues"
+        android:key="cleanAutomatic"
+        android:summary="Every 4 days"
+        android:title="Clean Database" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="notificationsShow"
+        android:summary="Notify me when new articles"
+        android:title="Notifications" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="downloadThumbnails"
+        android:summary="Not recommended for 3G networks.\n(Change will affect feature updates)"
+        android:title="Download Thumbnails" />
+
+
+</PreferenceScreen>
